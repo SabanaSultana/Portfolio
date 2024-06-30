@@ -1,0 +1,10 @@
+.home-container{
+    height:300px;
+    color: white;
+    margin-left: 150px;
+}
+
+.home-content h1{
+    padding:10px;
+    padding-top:80px
+}

@@ -1,10 +1,12 @@
 .sidebar-section{
     display: flex;
+    background:linear-gradient(to bottom,black,green);
 }
 .sidebar{
     height: 100vh;
     background: black;   /*sidebar's background  color*/
     width: 90px;
+    position: fixed;
 }
 .sidebar-toggle{
     width:230px;
