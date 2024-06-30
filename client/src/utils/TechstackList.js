@@ -1,0 +1,38 @@
+import {BsFiletypeHtml} from "react-icons/bs"
+export const TechstackList=[
+    {
+        _id:1,
+        name:"HTML",
+        icon:BsFiletypeHtml,
+    },
+    {
+        _id:2,
+        name:"HTML",
+        icon:BsFiletypeHtml,
+    },
+    {
+        _id:3,
+        name:"HTML",
+        icon:BsFiletypeHtml,
+    },
+    {
+        _id:4,
+        name:"HTML",
+        icon:BsFiletypeHtml,
+    },
+    {
+        _id:5,
+        name:"HTML",
+        icon:BsFiletypeHtml,
+    },
+    {
+        _id:6,
+        name:"HTML",
+        icon:BsFiletypeHtml,
+    },
+    {
+        _id:7,
+        name:"HTML",
+        icon:BsFiletypeHtml,
+    },
+]
