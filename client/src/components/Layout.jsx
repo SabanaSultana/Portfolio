@@ -1,10 +1,24 @@
 import React from 'react'
+import Home from '../pages/Home/Home'
+import { AiOutlineDoubleRight } from "react-icons/ai";
+import './Layout.css'
 
 const Layout = () => {
   return (
-    <div>
-      
-    </div>
+    <>
+      <div className="sidebar-section">
+        <div className="sidebar">
+            <div className="sidebar-toggle-icons">
+                <p>
+                <AiOutlineDoubleRight size={30} />
+                </p>
+            </div>
+        </div>
+        <div className="container">
+            <Home/>
+        </div>
+      </div>
+    </>
   )
 }
 
