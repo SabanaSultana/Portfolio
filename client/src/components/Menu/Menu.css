@@ -16,10 +16,14 @@
 .nav-item {
     padding: 0.5rem 1.5rem;
     font-weight: 600;
+    cursor: pointer;
+}
+.nav-item:hover{
+    color:rgb(239, 25, 75);
 }
 .navbar-heading{
     color:#FFFACD;
 }
 .navbar-heading h1 span{
-    color:rgb(249, 12, 75);
+    color:rgb(205, 11, 63);
 }
