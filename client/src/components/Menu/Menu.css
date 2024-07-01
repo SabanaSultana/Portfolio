@@ -1,29 +1,44 @@
 .navbar {
-    display: flex;
-    justify-content: space-around;
-    padding-top: 2rem;
-    color:#FFFACD;
-    position:fixed;
-    width: 100%;
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    
+  display: flex;
+  justify-content: space-around;
+  padding-top: 2rem;
+  padding-bottom: 1rem;
+  color: #fffacd;
+  position: fixed;
+  width: 100%;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  transition: background-color 0.3s ease; 
+  /* z-index: 100; */
+}
+
+.navbar-scrolled {
+  background-color:rgb(138, 196, 246); 
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+  z-index: 100;
+  color:black
 }
 
 .nav-items {
-    display: flex;
+  display: flex;
 }
 
 .nav-item {
-    padding: 0.5rem 1.5rem;
-    font-weight: 600;
-    cursor: pointer;
+  padding: 0.5rem 1.5rem;
+  font-weight: 600;
+  cursor: pointer;
 }
-.nav-item:hover{
-    color:rgb(239, 25, 75);
+
+.nav-item:hover {
+  color: rgb(239, 25, 75);
 }
-.navbar-heading{
-    color:#FFFACD;
+
+.navbar-heading h1 {
+  display: flex;
+  align-items: center;
+  font-size: 24px; 
 }
-.navbar-heading h1 span{
-    color:rgb(205, 11, 63);
+
+.navbar-heading h1 span {
+  color: rgb(205, 11, 63); 
+  font-size: 28px; 
 }

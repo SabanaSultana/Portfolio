@@ -1,9 +1,29 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import "./Menu.css";
 
 const Menu = () => {
+  const [scrolled, setScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const isScrolled = window.scrollY > 0;
+      if (isScrolled !== scrolled) {
+        setScrolled(isScrolled);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, [scrolled]);
+
   return (
-    <div className="navbar">
+    <div
+      className={`navbar ${scrolled ? "navbar-scrolled" : ""}`}
+    
+    >
       <div className="navbar-heading">
         <h1>Portfo<span>lio.</span></h1>
       </div>

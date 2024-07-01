@@ -1,0 +1,66 @@
+.about-section{
+   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    padding: 50px;
+   box-shadow: rgba(90, 169, 238, 0.25) 0px 6px 12px -2px, rgba(41, 129, 229, 0.3) 0px 3px 7px -3px;
+    width: 90%;
+    margin: 0 auto; 
+    /* height: 90vh; */
+    text-align: center;
+    margin-top: 40px;
+}
+.about-section h1{
+    text-align: center;
+    margin-bottom: 20px;
+    font-weight: bold;
+    font-size: 40px;
+}
+.title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.title p {
+  flex-grow: 1;
+  border: none;
+  border-top: 1px solid #000; 
+  margin: 0 10px; 
+}
+
+.title span {
+  padding: 0 10px; 
+  font-weight: bold; 
+  color: rgb(228, 32, 87);
+}
+
+.about-me{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    display:flex;
+    flex-direction: row-reverse;
+    margin: 20px;
+    margin-top: 40px;
+    justify-content: space-between;
+}
+.description{
+  line-height: 1.6; 
+  letter-spacing: 0.5px; 
+  width:70%;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  gap:20px;
+}
+.description a{
+    color:white;
+    background: rgb(228, 32, 87);
+    text-decoration: none;
+    border-radius: 10px; 
+    width: 25%;
+    text-align: center;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+.img img{
+    width:250px;
+    height: 250px;
+}
