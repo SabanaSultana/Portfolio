@@ -10,11 +10,7 @@ function App() {
   return (
     <>
       <Layout/>
-      <div className="container">
-        <About/>
-        <Techstack/>
-        <Projects/>
-      </div>
+      
     </>
   )
 }

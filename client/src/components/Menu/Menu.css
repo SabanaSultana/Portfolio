@@ -1,22 +1,25 @@
-.navbar-profile-pic img{
-    height: 80px;
-    width: 80px;
+.navbar {
     display: flex;
-    vertical-align: middle;
-    margin: 0 auto;
-    margin-top:20px;
-    border-radius: 90px;
+    justify-content: space-around;
+    padding-top: 2rem;
+    color:#FFFACD;
+    position:fixed;
+    width: 100%;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    
 }
 
-.nav-item{
-    color:white;
-    margin-top: 30px;
-    mergin-left:20px;
+.nav-items {
+    display: flex;
 }
-.nav-link{
-    margin-top:20px ;
-    cursor: pointer;
+
+.nav-item {
+    padding: 0.5rem 1.5rem;
+    font-weight: 600;
 }
-.nav-link svg{
-    margin-right: 10px;
+.navbar-heading{
+    color:#FFFACD;
+}
+.navbar-heading h1 span{
+    color:rgb(249, 12, 75);
 }
