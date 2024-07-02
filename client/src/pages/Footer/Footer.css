@@ -1,0 +1,11 @@
+.footer{
+    background: black;
+    color: white;
+    padding:1rem 0rem;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.footer p{
+    text-align: center;
+    font-weight: bold;
+}
+

@@ -44,7 +44,7 @@
   margin-top: 40px;
   justify-content: space-between;
 }
-.description {
+._description {
   line-height: 1.6;
   letter-spacing: 0.5px;
   width: 70%;
@@ -53,7 +53,7 @@
   flex-direction: column;
   gap: 20px;
 }
-.description a {
+._description a {
   color: white;
   background: rgb(228, 32, 87);
   text-decoration: none;
@@ -62,7 +62,14 @@
   text-align: center;
   padding-top: 5px;
   padding-bottom: 5px;
+  transition: transform 0.5s ease;
 }
+._description a:hover {
+  color: white;
+  background: rgb(241, 77, 124);
+  transform: scale(1.1);
+}
+
 .img img {
   width: 250px;
   height: 250px;
@@ -85,4 +92,8 @@
 .profiles .leetcode img{
   width:30px;
   height:30px;
+}
+
+.profiles a:hover{
+  transform: scale(1.1);
 }

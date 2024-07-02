@@ -1,21 +1,24 @@
 .navbar {
   display: flex;
   justify-content: space-around;
-  padding-top: 2rem;
-  padding-bottom: 1rem;
+  padding-top: 1.3rem;
+  padding-bottom: 0.7rem;
   color: #fffacd;
   position: fixed;
   width: 100%;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   transition: background-color 0.3s ease; 
-  /* z-index: 100; */
+  
 }
 
 .navbar-scrolled {
-  background-color:rgb(138, 196, 246); 
+  background-color:rgb(249, 25, 75); 
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
   z-index: 100;
-  color:black
+  color:white
+}
+.navbar-scrolled .navbar-heading h1 span {
+  color:white;
 }
 
 .nav-items {
@@ -30,6 +33,11 @@
 
 .nav-item:hover {
   color: rgb(239, 25, 75);
+  text-decoration:underline;
+}
+.navbar-scrolled .nav-items .nav-item:hover{
+  color:black;
+  text-decoration:underline;
 }
 
 .navbar-heading h1 {
@@ -41,4 +49,7 @@
 .navbar-heading h1 span {
   color: rgb(205, 11, 63); 
   font-size: 28px; 
+}
+.nav-items .active{
+  color:rgb(22, 207, 152);
 }

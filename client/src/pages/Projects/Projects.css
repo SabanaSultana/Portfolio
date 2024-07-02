@@ -1,16 +1,78 @@
-.projects{
-    background:black;
-    color: white;
-    padding-top: 1.5rem;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+.projects {
+  background: black;
+  color: white;
+  padding-top: 1.5rem;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  width: 100%;
+  height: auto;
 }
-.projects h1{
-    text-align: center;
-    font-size: 40px;
-    font-weight: bolder;    
-    border-bottom:4px solid white ;
-    width:35%;
-    margin: auto;
-    padding-bottom: 7px;
-   
+
+.projects h1 {
+  text-align: center;
+  font-size: 40px;
+  font-weight: bolder;
+  border-bottom: 4px solid white;
+  width: 35%;
+  margin: auto;
+  padding-bottom: 10px;
+}
+
+.project-list {
+  display: flex;
+  justify-content: space-around;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+.project {
+  background: rgb(32, 30, 30);
+  width:29%;
+  color: white;
+  transition: transform 0.6s ease;
+  display: flex;
+  flex-direction: column;
+  gap:1.5rem;
+}
+
+.project:hover {
+  background: rgb(237, 55, 85);
+  transform: scale(1.05); 
+}
+
+.img img {
+  width: 100%;
+  height:200px;
+}
+
+.project-description {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap:1.5rem;
+  padding-bottom: 2rem;
+}
+
+.project-description p {
+  text-align: left;
+  margin-left: 2rem;
+}
+.techs span{
+  background:rgb(206, 194, 29);    
+  margin:0.3rem;
+  padding:0.3rem 0.5rem;
+  border-radius:20px;
+}
+.project-description a{
+    background:rgb(35, 167, 184);
+    text-decoration: none;
+    color: white;
+    width: 25%;
+    margin-left:2rem;
+    padding:0.3rem 0.7rem;
+    border-radius: 10px;
+    transition: transform 0.5s ease;
+}
+.project-description a:hover{
+    background:rgb(107, 201, 214);
+    transform: scale(1.1);
 }
