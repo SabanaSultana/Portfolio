@@ -1,0 +1,16 @@
+.projects{
+    background:black;
+    color: white;
+    padding-top: 1.5rem;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.projects h1{
+    text-align: center;
+    font-size: 40px;
+    font-weight: bolder;    
+    border-bottom:4px solid white ;
+    width:35%;
+    margin: auto;
+    padding-bottom: 7px;
+   
+}
