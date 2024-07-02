@@ -1,0 +1,138 @@
+.contact {
+  width: 80%;
+  margin: auto;
+  margin-top: 5rem;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  margin-bottom: 5rem;
+}
+
+.contact h1 {
+  text-align: center;
+  margin-bottom: 1rem;
+  font-size: 38px;
+}
+
+.contact-form {
+  display: flex;
+  justify-content: space-between;
+}
+
+.contact .title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+
+.contact .title span {
+  color: black;
+  font-weight: bolder;
+  margin-left: 3px;
+  margin-right: 3px;
+}
+
+.contact .title .title-txt {
+  font-weight: bold;
+  color: rgb(228, 32, 87);
+  font-size: 20px;
+}
+
+._my-name,
+._address,
+._email,
+._number {
+  display: flex;
+}
+
+.whole-address {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.icon {
+  color: rgb(228, 32, 87);
+  margin-top: 9px;
+  margin-right: 9px;
+}
+
+.icon a {
+  color: rgb(228, 32, 87);
+}
+
+.whole-address > p:first-of-type {
+  color: rgb(228, 32, 87);
+  margin-bottom: 25px;
+}
+
+.whole-address h3 {
+  font-weight: bold;
+  font-size: 25px;
+}
+
+.whole-address div {
+  margin-bottom: 5px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  width:50%;
+}
+
+.form h2 {
+  font-size: 25px;
+  font-weight: bold;
+  margin-bottom:15px;
+  text-align: center;
+}
+.form h2 span{
+  color:rgb(228, 32, 87);
+}
+
+.input-row {
+  display: flex;
+  gap: 20px;
+}
+
+.input-group {
+  display: flex;
+  flex-direction: column;
+  gap:5px;
+  margin-bottom: 15px;
+  width: 100%;
+}
+
+
+.input-group input,
+.input-group textarea {
+  padding: 10px;
+  border: 1px solid rgb(152, 148, 148);
+  border-radius: 5px;
+  outline: none;
+}
+
+.input-group input:focus,
+.input-group textarea:focus {
+  border-color: rgb(228, 32, 87);
+  box-shadow: 0 0 5px rgba(228, 32, 87, 0.5);
+}
+
+.button-group {
+  display: flex;
+  justify-content: center;
+}
+
+.button-group button {
+  padding: 10px 20px;
+  background-color: rgb(228, 32, 87);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.button-group button:hover {
+  background-color: rgba(228, 32, 87, 0.8);
+}
