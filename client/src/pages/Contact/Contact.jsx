@@ -8,6 +8,7 @@ import { FaPhoneAlt } from "react-icons/fa";
 import Fade from "react-reveal/Fade";
 import Spin from "react-reveal/Spin";
 import Zoom from "react-reveal/Zoom";
+import axios from "axios";
 const Contact = () => {
   const [formData, setFormData] = useState({
     name: "",
@@ -17,16 +18,25 @@ const Contact = () => {
   });
 
   const handleChange = (e) => {
-    const { name, value } = e.target;
-    setFormData((prevFormData) => ({
-      ...prevFormData,
-      [name]: value,
-    }));
+    const name = e.target.name;
+    const value = e.target.value;
+    setFormData({ ...formData, [name]: value });
   };
 
-  const handleSubmit = (event) => {
+  const handleSubmit = async (event) => {
     event.preventDefault();
-    console.log(formData);
+    const { name, email, subject, message } = formData;
+    try {
+      const result = await axios.post("http://localhost:8080/sendMessage", {
+        name,
+        email,
+        subject,
+        message,
+      });
+      console.log(result);
+    } catch (error) {
+      console.log(error);
+    }
   };
 
   return (
@@ -91,7 +101,7 @@ const Contact = () => {
             <h2>
               <span>»»</span> Message Me <span>««</span>
             </h2>
-            <form onSubmit={handleSubmit}>
+            <form onSubmit={handleSubmit} method="POST">
               <div className="input-row">
                 <div className="input-group">
                   <input
