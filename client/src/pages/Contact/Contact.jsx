@@ -5,9 +5,7 @@ import { FaUser } from "react-icons/fa";
 import { FaMapMarkerAlt } from "react-icons/fa";
 import { IoMdMail } from "react-icons/io";
 import { FaPhoneAlt } from "react-icons/fa";
-import Fade from "react-reveal/Fade";
-import Spin from "react-reveal/Spin";
-import Zoom from "react-reveal/Zoom";
+import { Zoom, Fade, Flip } from "react-awesome-reveal";
 import axios from "axios";
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -50,112 +48,108 @@ const Contact = () => {
         </div>
       </Zoom>
       <div className="contact-form">
-        <Fade left>
-          <div className="whole-address">
-            <h3>Get in Touch</h3>
-            <p>Let's Connect</p>
-            <div className="_my-name">
-              <div className="icon">
-                <FaUser />
-              </div>
-              <div className="details">
-                <h4>Name</h4>
-                <p>Sabana Sultana</p>
-              </div>
+        <div className="whole-address">
+          <h3>Get in Touch</h3>
+          <p>Let's Connect</p>
+          <div className="_my-name">
+            <div className="icon">
+              <FaUser />
             </div>
-            <div className="_address">
-              <div className="icon">
-                <FaMapMarkerAlt />
-              </div>
-              <div className="details">
-                <h4>Address</h4>
-                <p>Bardhaman, West Bengal</p>
-              </div>
-            </div>
-            <div className="_email">
-              <div className="icon">
-                <a href="mailto:sabanasultana132@gmail.com">
-                  <IoMdMail />
-                </a>
-              </div>
-              <div className="details">
-                <h4>Email</h4>
-                <p>sabanasultana132@gmail.com</p>
-              </div>
-            </div>
-            <div className="_number">
-              <div className="icon">
-                <a href="tel:+910000000000">
-                  <FaPhoneAlt />
-                </a>
-              </div>
-              <div className="details">
-                <h4>Ph No</h4>
-                <p>+91 0000000000</p>
-              </div>
+            <div className="details">
+              <h4>Name</h4>
+              <p>Sabana Sultana</p>
             </div>
           </div>
-        </Fade>
-        <Fade right>
-          <div className="form">
-            <h2>
-              <span>»»</span> Message Me <span>««</span>
-            </h2>
-            <form onSubmit={handleSubmit} method="POST">
-              <div className="input-row">
-                <div className="input-group">
-                  <input
-                    type="text"
-                    id="name"
-                    name="name"
-                    value={formData.name}
-                    onChange={handleChange}
-                    placeholder="Name"
-                    required
-                  />
-                </div>
-                <div className="input-group">
-                  <input
-                    type="email"
-                    id="email"
-                    name="email"
-                    value={formData.email}
-                    onChange={handleChange}
-                    placeholder="Email"
-                    required
-                  />
-                </div>
-              </div>
+          <div className="_address">
+            <div className="icon">
+              <FaMapMarkerAlt />
+            </div>
+            <div className="details">
+              <h4>Address</h4>
+              <p>Bardhaman, West Bengal</p>
+            </div>
+          </div>
+          <div className="_email">
+            <div className="icon">
+              <a href="mailto:sabanasultana132@gmail.com">
+                <IoMdMail />
+              </a>
+            </div>
+            <div className="details">
+              <h4>Email</h4>
+              <p>sabanasultana132@gmail.com</p>
+            </div>
+          </div>
+          <div className="_number">
+            <div className="icon">
+              <a href="tel:+910000000000">
+                <FaPhoneAlt />
+              </a>
+            </div>
+            <div className="details">
+              <h4>Ph No</h4>
+              <p>+91 0000000000</p>
+            </div>
+          </div>
+        </div>
+
+        <div className="form">
+          <h2>
+            <span>»»</span> Message Me <span>««</span>
+          </h2>
+          <form onSubmit={handleSubmit} method="POST">
+            <div className="input-row">
               <div className="input-group">
                 <input
                   type="text"
-                  id="subject"
-                  name="subject"
-                  value={formData.subject}
+                  id="name"
+                  name="name"
+                  value={formData.name}
                   onChange={handleChange}
-                  placeholder="Subject"
+                  placeholder="Name"
                   required
                 />
               </div>
               <div className="input-group">
-                <textarea
-                  id="message"
-                  name="message"
-                  value={formData.message}
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  value={formData.email}
                   onChange={handleChange}
-                  rows="5"
-                  placeholder="Message.."
+                  placeholder="Email"
                   required
-                ></textarea>
+                />
               </div>
-              <Spin>
-                <div className="button-group">
-                  <button type="submit">Submit</button>
-                </div>
-              </Spin>
-            </form>
-          </div>
-        </Fade>
+            </div>
+            <div className="input-group">
+              <input
+                type="text"
+                id="subject"
+                name="subject"
+                value={formData.subject}
+                onChange={handleChange}
+                placeholder="Subject"
+                required
+              />
+            </div>
+            <div className="input-group">
+              <textarea
+                id="message"
+                name="message"
+                value={formData.message}
+                onChange={handleChange}
+                rows="5"
+                placeholder="Message.."
+                required
+              ></textarea>
+            </div>
+
+            <div className="button-group">
+              <button type="submit">Submit</button>
+            </div>
+          </form>
+        </div>
       </div>
     </div>
   );

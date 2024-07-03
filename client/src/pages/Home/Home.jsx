@@ -1,9 +1,8 @@
 import React from "react";
 import "./Home.css";
 import Typewriter from "typewriter-effect";
-import Zoom from "react-reveal/Zoom";
 import Menu from "../../components/Menu/Menu";
-import Fade from "react-reveal/Fade";
+import { Zoom, Fade, Flip } from "react-awesome-reveal";
 
 const Home = () => {
   return (
@@ -11,26 +10,20 @@ const Home = () => {
       <Menu />
       <div className="home">
         <div className="leftbar">
-          <Fade left>
-            <p className="greet">Hello👋, I am</p>
-          </Fade>
-          <Fade right>
-            <p className="name">Sabana Sultana</p>
-          </Fade>
-          <Fade left>
-            <div className="typewriter-container">
-              <p>And I am a</p>
-              <div className="typewriter-text">
-                <Typewriter
-                  options={{
-                    strings: ["MERN STACK DEVELOPER!", "DATA SCIENCE ENTHUSIAST"],
-                    autoStart: true,
-                    loop: true,
-                  }}
-                />
-              </div>
+          <p className="greet">Hello👋, I am</p>
+          <p className="name">Sabana Sultana</p>
+          <div className="typewriter-container">
+            <p>And I am a</p>
+            <div className="typewriter-text">
+              <Typewriter
+                options={{
+                  strings: ["MERN STACK DEVELOPER!", "DATA SCIENCE ENTHUSIAST"],
+                  autoStart: true,
+                  loop: true,
+                }}
+              />
             </div>
-          </Fade>
+          </div>
         </div>
         <div className="rightbar">
           <Zoom>

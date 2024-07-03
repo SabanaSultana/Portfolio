@@ -4,9 +4,7 @@ import userImage from "../../assets/images/User_img.png";
 import Resume from "../../assets/docs/Sabana Sultana Resume - Copy.pdf";
 import { FaGithub } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
-import Fade from "react-reveal/Fade";
-import Zoom from "react-reveal/Zoom";
-import Spin from "react-reveal/Spin";
+import { Zoom, Fade, Flip } from "react-awesome-reveal";
 
 const About = () => {
   return (
@@ -35,39 +33,35 @@ const About = () => {
               innovate, aiming to solve real-world problems through my technical
               skills and collaborative efforts.
             </p>
-            <Spin>
-              <a href={Resume} download="Sabana_Sultana_Resume.pdf">
-                Resume
-              </a>
-            </Spin>
+            <a href={Resume} download="Sabana_Sultana_Resume.pdf">
+              Resume
+            </a>
           </div>
           <div className="img">
             <img src={userImage} alt="user image" />
-            <Fade right>
-              <div className="profiles">
-                <a
-                  href="https://www.linkedin.com/in/sabana-sultana-273b36232/"
-                  className="linkedin"
-                >
-                  <FaLinkedin />
-                </a>
-                <a
-                  href="https://github.com/SabanaSultana?tab=overview&from=2024-07-01&to=2024-07-02"
-                  className="github"
-                >
-                  <FaGithub />
-                </a>
-                <a
-                  href="https://leetcode.com/u/Sabana_544_Sultana/"
-                  className="leetcode"
-                >
-                  <img
-                    src="https://img.icons8.com/?size=100&id=9L16NypUzu38&format=png&color=000000"
-                    alt=""
-                  />
-                </a>
-              </div>
-            </Fade>
+            <div className="profiles">
+              <a
+                href="https://www.linkedin.com/in/sabana-sultana-273b36232/"
+                className="linkedin"
+              >
+                <FaLinkedin />
+              </a>
+              <a
+                href="https://github.com/SabanaSultana?tab=overview&from=2024-07-01&to=2024-07-02"
+                className="github"
+              >
+                <FaGithub />
+              </a>
+              <a
+                href="https://leetcode.com/u/Sabana_544_Sultana/"
+                className="leetcode"
+              >
+                <img
+                  src="https://img.icons8.com/?size=100&id=9L16NypUzu38&format=png&color=000000"
+                  alt=""
+                />
+              </a>
+            </div>
           </div>
         </div>
       </div>
