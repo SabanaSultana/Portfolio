@@ -10,20 +10,23 @@ const Home = () => {
       <Menu />
       <div className="home">
         <div className="leftbar">
-          <p className="greet">Hello👋, I am</p>
-          <p className="name">Sabana Sultana</p>
-          <div className="typewriter-container">
-            <p>And I am a</p>
-            <div className="typewriter-text">
-              <Typewriter
-                options={{
-                  strings: ["MERN STACK DEVELOPER!", "DATA SCIENCE ENTHUSIAST"],
-                  autoStart: true,
-                  loop: true,
-                }}
-              />
+            <p className="greet">Hello👋, I am</p>
+          
+            <p className="name">Sabana Sultana</p>
+          
+            <div className="typewriter-container">
+              <p>And I am a</p>
+              <div className="typewriter-text">
+                <Typewriter
+                  options={{
+                    strings: ["MERN STACK DEVELOPER!", "DATA SCIENCE ENTHUSIAST"],
+                    autoStart: true,
+                    loop: true,
+                  }}
+                />
+              </div>
             </div>
-          </div>
+          
         </div>
         <div className="rightbar">
           <Zoom>

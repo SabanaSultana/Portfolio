@@ -2,9 +2,11 @@ import React, { useEffect, useState } from "react";
 import "./Menu.css";
 import { Link } from "react-scroll";
 import { Zoom, Fade, Flip } from "react-awesome-reveal";
+import { FaBars, FaTimes } from "react-icons/fa";
 
 const Menu = () => {
   const [scrolled, setScrolled] = useState(false);
+  const [menuOpen, setMenuOpen] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -21,6 +23,10 @@ const Menu = () => {
     };
   }, [scrolled]);
 
+  const toggleMenu = () => {
+    setMenuOpen(!menuOpen);
+  };
+
   return (
     <div className={`navbar ${scrolled ? "navbar-scrolled" : ""}`}>
       <div className="navbar-heading">
@@ -28,9 +34,19 @@ const Menu = () => {
           <span>🤝</span>
           Portfo<span>lio.</span>
         </h1>
+        <div className="menu-icon" onClick={toggleMenu}>
+          {menuOpen ? <FaTimes /> : <FaBars />}
+        </div>
       </div>
-      <div className="nav-items">
-        <Link to="Home" spy={true} smooth={true} hashSpy={true} duration={600}>
+      <div className={`nav-items ${menuOpen ? "nav-items-open" : ""}`}>
+        <Link
+          to="Home"
+          spy={true}
+          smooth={true}
+          hashSpy={true}
+          duration={600}
+          onClick={toggleMenu}
+        >
           <div className="nav-item">Home</div>
         </Link>
         <Link
@@ -40,6 +56,7 @@ const Menu = () => {
           hashSpy={true}
           duration={600}
           offset={-100}
+          onClick={toggleMenu}
         >
           <div className="nav-item">About</div>
         </Link>
@@ -50,6 +67,7 @@ const Menu = () => {
           hashSpy={true}
           duration={600}
           offset={-80}
+          onClick={toggleMenu}
         >
           <div className="nav-item">Skills</div>
         </Link>
@@ -60,6 +78,7 @@ const Menu = () => {
           hashSpy={true}
           duration={600}
           offset={-50}
+          onClick={toggleMenu}
         >
           <div className="nav-item">Projects</div>
         </Link>
@@ -70,6 +89,7 @@ const Menu = () => {
           hashSpy={true}
           duration={600}
           offset={-100}
+          onClick={toggleMenu}
         >
           <div className="nav-item">Contact Me</div>
         </Link>

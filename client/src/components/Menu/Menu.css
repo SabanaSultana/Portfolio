@@ -1,28 +1,49 @@
 .navbar {
   display: flex;
   justify-content: space-around;
+  align-items: center;
   padding-top: 1.3rem;
   padding-bottom: 0.7rem;
   color: #fffacd;
   position: fixed;
-  width: 100%;
+  left: 0; 
+  right: 0; 
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-  transition: background-color 0.3s ease; 
-  
+  transition: background-color 0.3s ease;
+  z-index: 100;
+  width: 100%;
+
 }
 
+
 .navbar-scrolled {
-  background-color:rgb(249, 25, 75); 
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
-  z-index: 100;
-  color:white
+  background-color: rgb(249, 25, 75);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  color: white;
 }
+
 .navbar-scrolled .navbar-heading h1 span {
-  color:white;
+  color: white;
+}
+
+.navbar-heading {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-heading h1 span {
+  color: rgb(205, 11, 63);
+}
+
+.menu-icon {
+  display: none;
+  cursor: pointer;
+  font-size: 24px;
 }
 
 .nav-items {
   display: flex;
+  align-items: center;
 }
 
 .nav-item {
@@ -33,23 +54,48 @@
 
 .nav-item:hover {
   color: rgb(239, 25, 75);
-  text-decoration:underline;
-}
-.navbar-scrolled .nav-items .nav-item:hover{
-  color:black;
-  text-decoration:underline;
+  text-decoration: underline;
 }
 
-.navbar-heading h1 {
-  display: flex;
-  align-items: center;
-  font-size: 30px; 
+.navbar-scrolled .nav-items .nav-item:hover {
+  color: black;
+  text-decoration: underline;
 }
 
-.navbar-heading h1 span {
-  color: rgb(205, 11, 63); 
-  font-size: 28px; 
+.nav-items .active {
+  color: rgb(22, 207, 152);
 }
-.nav-items .active{
-  color:rgb(22, 207, 152);
+
+@media (max-width: 830px) {
+  .menu-icon {
+    display: block;
+  }
+
+  .nav-items {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    background-color:rgb(61, 59, 59);
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    padding: 1rem 0;
+    z-index: 99;
+  }
+
+  .nav-items-open {
+    display: flex;
+  }
+
+  .nav-item {
+    padding: 1rem;
+    width: 100%;
+    text-align: center;
+    border-bottom: 1px solid white;
+  }
+
+  .navbar-scrolled .nav-items {
+    background-color: rgb(249, 25, 75);
+  }
 }

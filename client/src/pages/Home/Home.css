@@ -18,7 +18,7 @@
   gap: 20px;
   color: #fffacd;
   margin-left: 7rem;
-  width: 65%;
+  width:70%;
 }
 
 .rightbar {
@@ -71,3 +71,58 @@
   font-size: 50px;
   font-weight: bold;
 }
+
+@media (max-width:950px) {
+  .rightbar{
+    display: none;
+  }
+  .home {
+  padding: 20px;
+  position: absolute;
+  top: 32%;
+  width: 100%;
+}
+
+.leftbar {
+  display: flex;
+  flex-direction: column;
+  gap:10px;
+  color: #fffacd;
+  margin-left:3rem;
+  width:60%;
+}
+.leftbar p{
+  font-size:30px;
+}
+.typewriter-container {
+  display: inline-flex;
+  align-items: center;
+  white-space: nowrap;
+}
+
+.typewriter-container p {
+  margin: 0;
+  font-size: 40px;
+}
+
+.typewriter-container .typewriter-text {
+  margin-left: 5px;
+  color: rgb(249, 12, 75);
+  font-size: 40px;
+}
+
+.greet {
+  font-size: 30px;
+}
+
+.name {
+  font-size: 50px;
+  font-weight: bold;
+}
+
+}
+
+@media (min-width: 350px) and (max-width:850px){
+  
+}
+
