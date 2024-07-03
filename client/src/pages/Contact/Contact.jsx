@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import "./Contact.css";
 import { FaUser, FaMapMarkerAlt, FaPhoneAlt } from "react-icons/fa";
 import { IoMdMail } from "react-icons/io";
-import { Zoom } from "react-awesome-reveal";
+import { Zoom, Flip } from "react-awesome-reveal";
 import axios from "axios";
 
 const Contact = () => {
@@ -146,10 +146,11 @@ const Contact = () => {
                 required
               ></textarea>
             </div>
-
-            <div className="button-group">
-              <button type="submit">Submit</button>
-            </div>
+            <Flip>
+              <div className="button-group">
+                <button type="submit">Submit</button>
+              </div>
+            </Flip>
           </form>
         </div>
       </div>

@@ -30,10 +30,12 @@ const Menu = () => {
   return (
     <div className={`navbar ${scrolled ? "navbar-scrolled" : ""}`}>
       <div className="navbar-heading">
-        <h1>
-          <span>🤝</span>
-          Portfo<span>lio.</span>
-        </h1>
+        <Flip>
+          <h1>
+            <span>🤝</span>
+            Portfo<span>lio.</span>
+          </h1>
+        </Flip>
         <div className="menu-icon" onClick={toggleMenu}>
           {menuOpen ? <FaTimes /> : <FaBars />}
         </div>

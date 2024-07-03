@@ -1,10 +1,9 @@
-/* Techstack.css */
-
 .techstack-container {
   width: 65%;
   margin: 0 auto;
   margin-top: 5rem;
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
 }
 
 .headings {
@@ -33,7 +32,8 @@
 .techstack-item {
   position: relative;
   border: 1px solid #ccc;
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+    rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
   padding: 1rem;
   width: calc(20% - 2rem);
   text-align: center;
@@ -44,11 +44,45 @@
 
 .techstack-item:hover {
   background: #d0f6f3;
-  transform: scale(1.1); 
+  transform: scale(1.1);
 }
 
 .techstack-item img {
   width: 40px;
   height: auto;
   margin-bottom: 1rem;
+}
+
+@media (max-width: 970px) {
+  .techstack-container {
+    width: 80%;
+  }
+
+  .techstack-item {
+    width: calc(33.333% - 2rem);
+  }
+}
+
+@media (max-width: 768px) {
+  .headings h2 {
+    font-size: 32px;
+  }
+
+  .techstack-item {
+    width: calc(50% - 2rem);
+  }
+}
+
+@media (max-width: 480px) {
+  .headings h2 {
+    font-size: 28px;
+  }
+
+  .techstack-item {
+    width: calc(100% - 2rem);
+  }
+
+  .techstack-item img {
+    width: 35px;
+  }
 }

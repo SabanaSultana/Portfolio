@@ -13,15 +13,16 @@ const Techstack = () => {
           and backend tools and APIs..
         </p>
       </div>
-
-      <div className="techstack-items">
-        {TechstackList.map((tech) => (
-          <div key={tech._id} className="techstack-item">
-            <img src={tech.img} alt="" />
-            <p>{tech.name}</p>
-          </div>
-        ))}
-      </div>
+      <Fade cascade damping={1} delay={1500}>
+        <div className="techstack-items">
+          {TechstackList.map((tech) => (
+            <div key={tech._id} className="techstack-item">
+              <img src={tech.img} alt="" />
+              <p>{tech.name}</p>
+            </div>
+          ))}
+        </div>
+      </Fade>
     </div>
   );
 };

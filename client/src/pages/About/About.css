@@ -6,16 +6,17 @@
     rgba(41, 129, 229, 0.3) 0px 3px 7px -3px;
   width: 90%;
   margin: 0 auto;
-  /* height: 90vh; */
   text-align: center;
   margin-top: 40px;
 }
+
 .about-section h1 {
   text-align: center;
   margin-bottom: 20px;
   font-weight: bold;
   font-size: 40px;
 }
+
 .title {
   display: flex;
   align-items: center;
@@ -44,6 +45,7 @@
   margin-top: 40px;
   justify-content: space-between;
 }
+
 ._description {
   line-height: 1.6;
   letter-spacing: 0.5px;
@@ -53,6 +55,7 @@
   flex-direction: column;
   gap: 20px;
 }
+
 ._description a {
   color: white;
   background: rgb(228, 32, 87);
@@ -64,6 +67,7 @@
   padding-bottom: 5px;
   transition: transform 0.5s ease;
 }
+
 ._description a:hover {
   color: white;
   background: rgb(241, 77, 124);
@@ -74,26 +78,88 @@
   width: 250px;
   height: 250px;
 }
-.profiles{
-  margin-top:40px;
+
+.profiles {
+  margin-top: 40px;
   display: flex;
-  margin-left:40px;
-  gap:30px;
-}
-.profiles a{
-  font-size: 30px;
-}
-.profiles .linkedin{
-  color:rgb(48, 127, 211);
-}
-.profiles .github{
-  color:black;
-}
-.profiles .leetcode img{
-  width:30px;
-  height:30px;
+  margin-left: 40px;
+  gap: 30px;
 }
 
-.profiles a:hover{
+.profiles a {
+  font-size: 30px;
+}
+
+.profiles .linkedin {
+  color: rgb(48, 127, 211);
+}
+
+.profiles .github {
+  color: black;
+}
+
+.profiles .leetcode img {
+  width: 30px;
+  height: 30px;
+}
+
+.profiles a:hover {
   transform: scale(1.1);
+}
+
+/* Responsive design */
+@media (max-width: 850px) {
+  .about-me {
+    flex-direction: column-reverse;
+    align-items: center;
+    gap:15px;
+  }
+
+  ._description {
+    width: 100%;
+    text-align: center;
+  }
+  ._description p{
+    text-align: left;
+  }
+
+  .img img {
+    width: 200px;
+    height: 200px;
+  }
+
+  .profiles {
+    margin-left: 0;
+    justify-content: center;
+  }
+
+  ._description a {
+    width: 50%;
+  }
+}
+
+@media (max-width: 500px) {
+  ._description a {
+    width: 70%;
+  }
+}
+
+@media (max-width: 300px) {
+  ._description a {
+    width: 90%;
+  }
+
+  .img img {
+    width: 150px;
+    height: 150px;
+  }
+
+  .profiles a {
+    font-size: 24px;
+  }
+
+  .profiles .leetcode img {
+    width: 24px;
+    height: 24px;
+  }
 }

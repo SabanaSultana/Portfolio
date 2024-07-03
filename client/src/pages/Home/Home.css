@@ -1,8 +1,8 @@
-.header{
-     background:linear-gradient(35deg,#852e79,#292360,#88287b);
-     height: 100vh;
-
+.header {
+  background: linear-gradient(35deg, #852e79, #292360, #88287b);
+  height: 100vh;
 }
+
 .home {
   display: flex;
   justify-content: space-between;
@@ -18,7 +18,7 @@
   gap: 20px;
   color: #fffacd;
   margin-left: 7rem;
-  width:70%;
+  width: 70%;
 }
 
 .rightbar {
@@ -30,19 +30,19 @@
 .avatar {
   width: 250px;
   height: 250px;
-  box-shadow: 0 20px 5px 5px rgba(0,0,0,.2);
-  animation: pulse 4s ease-in-out infinite; 
+  box-shadow: 0 20px 5px 5px rgba(0, 0, 0, 0.2);
+  animation: pulse 4s ease-in-out infinite;
 }
 
 @keyframes pulse {
   0% {
-    border-radius:60% 40% 30% 70% /60% 30% 40% 70%;
+    border-radius: 60% 40% 30% 70% / 60% 30% 40% 70%;
   }
   50% {
-    border-radius: 30% 60% 70% 40% /50% 60% 30% 60%  ;
+    border-radius: 30% 60% 70% 40% / 50% 60% 30% 60%;
   }
   100% {
-    border-radius: 30% 60% 70% 40% /50% 60% 30% 60% ;
+    border-radius: 30% 60% 70% 40% / 50% 60% 30% 60%;
   }
 }
 
@@ -72,57 +72,48 @@
   font-weight: bold;
 }
 
-@media (max-width:950px) {
-  .rightbar{
-    display: none;
-  }
+@media (max-width: 1000px) {
   .home {
-  padding: 20px;
-  position: absolute;
-  top: 32%;
-  width: 100%;
-}
+    flex-direction: column;
+    align-items: center;
+    top: 20%;
+    text-align: center;
+  }
 
-.leftbar {
-  display: flex;
-  flex-direction: column;
-  gap:10px;
-  color: #fffacd;
-  margin-left:3rem;
-  width:60%;
-}
-.leftbar p{
-  font-size:30px;
-}
-.typewriter-container {
-  display: inline-flex;
-  align-items: center;
-  white-space: nowrap;
-}
+  .leftbar {
+    margin-left: 0;
+    width: 100%;
+    gap: 10px;
+  }
 
-.typewriter-container p {
-  margin: 0;
-  font-size: 40px;
-}
+  .typewriter-container {
+    display:flex;
+    align-items: center;
+    white-space:wrap;
+    flex-direction: column;
+  }
+  .typewriter-container p {
+    font-size: 25px;
+  }
 
-.typewriter-container .typewriter-text {
-  margin-left: 5px;
-  color: rgb(249, 12, 75);
-  font-size: 40px;
-}
+  .typewriter-container .typewriter-text {
+    font-size: 25px;
+  }
 
-.greet {
-  font-size: 30px;
-}
+  .greet {
+    font-size: 20px;
+  }
 
-.name {
-  font-size: 50px;
-  font-weight: bold;
-}
+  .name {
+    font-size: 35px;
+  }
 
-}
+  .rightbar {
+    margin-top: 20px;
+  }
 
-@media (min-width: 350px) and (max-width:850px){
-  
+  .avatar {
+    width: 200px;
+    height: 200px;
+  }
 }
-

@@ -10,10 +10,8 @@ const Home = () => {
       <Menu />
       <div className="home">
         <div className="leftbar">
-            <p className="greet">Hello👋, I am</p>
-          
-            <p className="name">Sabana Sultana</p>
-          
+            <p className="greet">Hello👋, I am</p>          
+            <p className="name">Sabana Sultana</p>          
             <div className="typewriter-container">
               <p>And I am a</p>
               <div className="typewriter-text">
