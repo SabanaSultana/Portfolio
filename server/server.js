@@ -13,11 +13,9 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 //static files
-app.use(express.static(path.join(__dirname, "../client/dist")));
+// app.use(express.static(path.join(__dirname, "../client/dist")));
 
 mongoose.connect("mongodb://127.0.0.1:27017/Portfolio");
-// app.use("/api/v1/portfolio", require("./routes/portfolioRoutes"));
-
 const port = process.env.PORT || 8080;
 app.post("/sendMessage", (req, res) => {
   MessageModel.create(req.body)
@@ -25,9 +23,9 @@ app.post("/sendMessage", (req, res) => {
     .catch((err) => res.json(err));
 });
 
-app.get("*", function (req, res) {
-  res.sendFile(path.join(__dirname, "../client/dist/index.html"));
-});
+// app.get("*", function (req, res) {
+//   res.sendFile(path.join(__dirname, "../client/dist/index.html"));
+// });
 //listen
 app.listen(port, () => {
   console.log(`Server running on port ${port}`);

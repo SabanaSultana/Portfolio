@@ -1,12 +1,10 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Contact.css";
-import { useState } from "react";
-import { FaUser } from "react-icons/fa";
-import { FaMapMarkerAlt } from "react-icons/fa";
+import { FaUser, FaMapMarkerAlt, FaPhoneAlt } from "react-icons/fa";
 import { IoMdMail } from "react-icons/io";
-import { FaPhoneAlt } from "react-icons/fa";
-import { Zoom, Fade, Flip } from "react-awesome-reveal";
+import { Zoom } from "react-awesome-reveal";
 import axios from "axios";
+
 const Contact = () => {
   const [formData, setFormData] = useState({
     name: "",
@@ -32,8 +30,12 @@ const Contact = () => {
         message,
       });
       console.log(result);
+      alert("Data has been sent successfully!");
+      setFormData({ name: "", email: "", subject: "", message: "" });
     } catch (error) {
       console.log(error);
+      alert("There was an error sending your message.");
+      setFormData({ name: "", email: "", subject: "", message: "" });
     }
   };
 
