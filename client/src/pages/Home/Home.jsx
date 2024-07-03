@@ -23,7 +23,7 @@ const Home = () => {
               <div className="typewriter-text">
                 <Typewriter
                   options={{
-                    strings: ["MERN STACK DEVELOPER!", "ML ENTHUSIAST"],
+                    strings: ["MERN STACK DEVELOPER!", "DATA SCIENCE ENTHUSIAST"],
                     autoStart: true,
                     loop: true,
                   }}
