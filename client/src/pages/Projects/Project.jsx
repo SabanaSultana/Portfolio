@@ -1,6 +1,9 @@
 import React from "react";
 import "./Projects.css";
 import { Zoom, Fade, Flip } from "react-awesome-reveal";
+import Trend from "../../assets/images/Trend.png";
+import Rozgar1 from "../../assets/images/ChatBot1.png"; 
+import Rozgar2 from "../../assets/images/ChatBot2.png"; 
 
 const Projects = () => {
   return (
@@ -10,10 +13,14 @@ const Projects = () => {
       <Fade cascade damping={4} delay={2}>
         <div className="project-list">
           <div className="project-1 project">
-            <div className="img">
+            <div className="img rozgarimg">
               <img
-                src="https://surveysparrow.com/wp-content/uploads/2020/11/Advantages-of-adding-chatbot-for-website-@2x-Copy-1.png"
-                alt=""
+                src={Rozgar1}
+                alt="Error loading rozgar1 image"
+              />
+              <img
+                src={Rozgar2}
+                alt="Error loading rozgar2 image"
               />
             </div>
             <div className="project-description">
@@ -31,35 +38,32 @@ const Projects = () => {
                 supports dynamic interactions and ensures smooth communication.
               </p>
 
-              <a href="#">View</a>
+              <a href="https://github.com/SabanaSultana/rozgarmitra-23">View</a>
             </div>
           </div>
 
           <div className="project-2 project">
             <div className="img">
               <img
-                src="https://geekflare.com/wp-content/uploads/2021/04/online-store-builder.jpg"
-                alt=""
+                src={Trend}
+                alt="Error Loading Image"
               />
             </div>
             <div className="project-description">
               <div className="techs">
                 <span>React</span>
-                <span>CSS</span>
-                <span>Node Js</span>
-                <span>MongoDB</span>
+                <span>Tailwind</span>
               </div>
               <p>
-                An innovative ecommerce platform that offers a seamless shopping
-                experience, featuring dynamic product listings, secure payment
-                gateways, and real-time inventory management. This full stack
-                project involves both frontend and backend development,
-                integrating a responsive user interface with a robust
-                server-side application to handle business logic and database
-                interactions.
+                This is an E-Commerce application's UI. It features a sleek and
+                modern design with both dark mode and light mode options. Users
+                can easily add items to their cart, remove items, and filter
+                products based on categories. The interface is designed to
+                provide a seamless shopping experience with intuitive navigation
+                and responsive design.
               </p>
 
-              <a href="#">View</a>
+              <a href="https://github.com/SabanaSultana/Trend">View</a>
             </div>
           </div>
 
@@ -79,14 +83,13 @@ const Projects = () => {
               </div>
               <p>
                 A full-featured blog application using the MERN stack, offering
-                secure user authentication, rich text editing, and real-time
-                commenting. Users can create, edit, and manage their posts
-                effortlessly with a responsive design that works across all
-                devices. The platform includes personalized user profiles,
-                powerful search capabilities, and robust backend support for a
-                seamless blogging experience.
+                secure user authentication. Users can create, edit, and manage
+                their posts effortlessly with a responsive design that works
+                across all devices.
               </p>
-              <a href="#">View</a>
+              <a href="https://github.com/SabanaSultana/Blog-Application-Frontend">
+                View
+              </a>
             </div>
           </div>
         </div>

@@ -74,6 +74,17 @@ const Menu = () => {
           <div className="nav-item">Skills</div>
         </Link>
         <Link
+          to="Experience"
+          spy={true}
+          smooth={true}
+          hashSpy={true}
+          duration={600}
+          offset={-80}
+          onClick={toggleMenu}
+        >
+          <div className="nav-item">Experience</div>
+        </Link>
+        <Link
           to="Project"
           spy={true}
           smooth={true}

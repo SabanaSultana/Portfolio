@@ -1,7 +1,7 @@
 import React from "react";
 import "./About.css";
 import userImage from "../../assets/images/User_img.png";
-import Resume from "../../assets/docs/Sabana Sultana Resume - Copy.pdf";
+import Resume from "../../assets/docs/SabanaSultana_Resume.pdf";
 import { FaGithub } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
 import { Zoom, Fade, Flip } from "react-awesome-reveal";
@@ -21,17 +21,11 @@ const About = () => {
             <p>
               I am Sabana Sultana, I am doing my BTech from Aliah University
               (2021-2025) and my specialization is Computer Science and
-              Engineering with an overall cgpa of 8.8. I have strong knowledge
+              Engineering with an overall cgpa of 8.9. I have strong knowledge
               in MERN stack development and experience in tech stacks such as
-              React, Node.js, Express, and MongoDB. I have contributed to
-              projects including the Rozgar Mitra chatbot and an e-commerce
-              website. Additionally, I am a ML and data science enthusiast with
+              React Js, Nodejs, Express Js, and MongoDB. I have 6 months of internship experience as a Full Stack Developer(MERN), where I contributed in various E-Commerce and EDTech platforms. Additionally, I am a ML and data science enthusiast with
               expertise in data gathering, cleaning, and analysis using Python,
-              NumPy, pandas, and Matplotlib. I have a solid understanding of
-              various machine learning algorithms and their applications. My
-              passion for technology drives me to continuously learn and
-              innovate, aiming to solve real-world problems through my technical
-              skills and collaborative efforts.
+              NumPy, pandas, and Matplotlib.
             </p>
             <a href={Resume} download="Sabana_Sultana_Resume.pdf">
               Resume
